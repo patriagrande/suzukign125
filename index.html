@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Suzuki GN 125 en venta</title>
+<meta name="description" content="Suzuki GN 125 en venta. Fotos, videos, detalles y contacto directo.">
+
+<!-- Open Graph: así se ve el link cuando lo compartís por WhatsApp / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Suzuki GN 125 en venta">
+<meta property="og:description" content="Fotos, videos y detalles de la moto.">
+<meta property="og:image" content="imagenes/portada.jpg">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏍️</text></svg>">
+
+<!-- CSS externo (CDN) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+<style>
+/* ============================================================
+   TEMA / COLORES  —  cambiá estas variables y cambia toda la página
+   ============================================================ */
+:root{
+  --bg:#0d0f12;
+  --bg-2:#14171c;
+  --card:#191d23;
+  --line:#272c34;
+  --txt:#eef1f5;
+  --txt-dim:#a3abb7;
+  --accent:#ff7a18;      /* naranja */
+  --accent-2:#e4002b;    /* rojo Suzuki */
+  --ok:#25d366;          /* verde WhatsApp */
+  --radius:14px;
+  --max:1120px;
+  --header-h:64px;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--bg); color:var(--txt);
+  font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img,video{max-width:100%; display:block}
+a{color:var(--accent); text-decoration:none}
+h1,h2,h3,.display{font-family:"Barlow Condensed","Inter",sans-serif; font-weight:700; line-height:1.05; letter-spacing:.5px; margin:0 0 .4em}
+h2{font-size:clamp(1.8rem,5vw,2.6rem); text-transform:uppercase}
+.wrap{width:100%; max-width:var(--max); margin-inline:auto; padding-inline:20px}
+section{padding-block:clamp(56px,9vw,96px)}
+.lead{color:var(--txt-dim); max-width:62ch}
+
+/* ---------- Botones ---------- */
+.btn{
+  display:inline-flex; align-items:center; gap:.5rem;
+  padding:.85rem 1.4rem; border-radius:999px; border:1px solid transparent;
+  font-weight:700; font-size:.95rem; cursor:pointer; transition:.2s transform,.2s background,.2s border-color;
+  text-decoration:none;
+}
+.btn:active{transform:scale(.97)}
+.btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent-2)); color:#fff}
+.btn-wa{background:var(--ok); color:#06301a}
+.btn-ghost{background:rgba(255,255,255,.06); color:var(--txt); border-color:var(--line); backdrop-filter:blur(6px)}
+.btn-ghost:hover{border-color:var(--accent)}
+
+/* ---------- Header ---------- */
+header{
+  position:fixed; inset:0 0 auto 0; z-index:50; height:var(--header-h);
+  display:flex; align-items:center;
+  padding-top:env(safe-area-inset-top,0px);
+  transition:background .3s, border-color .3s;
+  border-bottom:1px solid transparent;
+}
+header.solid{background:rgba(13,15,18,.9); backdrop-filter:blur(10px); border-bottom-color:var(--line)}
+header .wrap{display:flex; align-items:center; justify-content:space-between; gap:1rem}
+.brand{font-family:"Barlow Condensed",sans-serif; font-size:1.3rem; font-weight:700; color:var(--txt); text-transform:uppercase; letter-spacing:1px}
+.brand span{color:var(--accent)}
+nav ul{display:flex; gap:1.6rem; list-style:none; margin:0; padding:0}
+nav a{color:var(--txt-dim); font-size:.9rem; font-weight:500}
+nav a:hover{color:var(--txt)}
+#menu-btn{display:none; background:none; border:0; color:var(--txt); font-size:1.6rem; line-height:1; cursor:pointer; padding:.2rem .4rem}
+
+/* ---------- HERO con video de fondo ---------- */
+.hero{position:relative; min-height:100svh; display:grid; place-items:center; text-align:center; overflow:hidden; padding-block:0}
+.hero-bg{position:absolute; inset:0; z-index:0}
+.hero-bg video, .hero-bg img{width:100%; height:100%; object-fit:cover}
+.hero-bg::after{
+  content:""; position:absolute; inset:0;
+  background:linear-gradient(to bottom,rgba(13,15,18,.72) 0%,rgba(13,15,18,.45) 40%,rgba(13,15,18,.95) 100%);
+}
+.hero-inner{position:relative; z-index:1; padding:calc(var(--header-h) + 24px) 20px 72px; max-width:800px}
+.badge{
+  display:inline-block; padding:.35rem .9rem; border-radius:999px; margin-bottom:1rem;
+  background:rgba(255,122,24,.15); border:1px solid rgba(255,122,24,.5);
+  color:var(--accent); font-size:.75rem; font-weight:700; letter-spacing:2px; text-transform:uppercase;
+}
+.hero h1{font-size:clamp(2.6rem,11vw,5.5rem); text-transform:uppercase; text-shadow:0 4px 30px rgba(0,0,0,.5)}
+.hero .price{font-family:"Barlow Condensed",sans-serif; font-size:clamp(2rem,7vw,3rem); color:var(--accent); font-weight:700}
+.hero .sub{color:#d6dce5; font-size:clamp(1rem,2.5vw,1.15rem); margin:.2rem 0 1.8rem}
+.hero-cta{display:flex; flex-wrap:wrap; gap:.8rem; justify-content:center}
+.quick{display:flex; flex-wrap:wrap; gap:.6rem; justify-content:center; margin-top:1.8rem}
+.quick span{
+  font-size:.8rem; color:#e7ebf1; padding:.35rem .8rem; border-radius:999px;
+  background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.14);
+}
+/* botón de sonido del video de fondo */
+#sound-btn{
+  position:absolute; right:16px; bottom:calc(16px + env(safe-area-inset-bottom,0px)); z-index:2;
+  width:46px; height:46px; border-radius:50%; display:grid; place-items:center;
+  background:rgba(0,0,0,.45); border:1px solid rgba(255,255,255,.25); color:#fff;
+  font-size:1.1rem; cursor:pointer; backdrop-filter:blur(6px);
+}
+.scroll-hint{position:absolute; bottom:18px; left:50%; transform:translateX(-50%); z-index:2; color:#fff8; font-size:1.4rem; animation:bob 1.8s infinite}
+@keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,8px)}}
+
+/* ---------- Ficha técnica ---------- */
+.specs{display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:14px; margin-top:2rem}
+.spec{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:1.1rem 1.2rem}
+.spec dt{font-size:.72rem; text-transform:uppercase; letter-spacing:1.5px; color:var(--txt-dim); margin-bottom:.25rem}
+.spec dd{margin:0; font-family:"Barlow Condensed",sans-serif; font-size:1.5rem; font-weight:700}
+
+/* ---------- Galería de fotos ---------- */
+.gallery{display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:12px; margin-top:2rem}
+.gallery a{position:relative; display:block; border-radius:var(--radius); overflow:hidden; aspect-ratio:4/3; background:var(--bg-2)}
+.gallery img{width:100%; height:100%; object-fit:cover; transition:transform .45s ease}
+.gallery a:hover img{transform:scale(1.06)}
+.gallery a::after{content:"⤢"; position:absolute; right:10px; bottom:8px; color:#fff; opacity:0; transition:.3s; text-shadow:0 2px 8px #000}
+.gallery a:hover::after{opacity:1}
+
+/* ---------- Videos ---------- */
+.videos{display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:18px; margin-top:2rem}
+.video-card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden}
+.video-card video{width:100%; max-height:70vh; aspect-ratio:16/9; object-fit:contain; background:#000}
+.video-card p{margin:0; padding:.8rem 1rem; font-size:.9rem; color:var(--txt-dim)}
+
+/* ---------- Detalles / lista ---------- */
+.two-col{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:28px; margin-top:2rem}
+.panel{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:1.4rem 1.5rem}
+.panel h3{font-size:1.3rem; text-transform:uppercase; color:var(--accent)}
+.check{list-style:none; margin:0; padding:0}
+.check li{padding-left:1.7rem; position:relative; margin-bottom:.5rem; color:var(--txt-dim)}
+.check li::before{content:"✓"; position:absolute; left:0; color:var(--ok); font-weight:700}
+
+/* ---------- Contacto ---------- */
+#contacto{background:var(--bg-2); border-top:1px solid var(--line)}
+.contact-box{text-align:center; max-width:620px; margin-inline:auto}
+.contact-box .btn{margin-top:1.2rem}
+
+footer{padding:28px 0 calc(28px + env(safe-area-inset-bottom,0px)); border-top:1px solid var(--line); color:var(--txt-dim); font-size:.82rem; text-align:center}
+
+/* ---------- Animación de aparición ---------- */
+.reveal{opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease}
+.reveal.in{opacity:1; transform:none}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1; transform:none; transition:none}
+  .scroll-hint{animation:none}
+  html{scroll-behavior:auto}
+}
+
+/* ---------- Responsive: teléfonos ---------- */
+@media (max-width:760px){
+  #menu-btn{display:block}
+  nav{
+    position:fixed; inset:var(--header-h) 0 auto 0; display:none;
+    background:rgba(13,15,18,.97); backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line); padding:1rem 20px 1.4rem;
+  }
+  nav.open{display:block}
+  nav ul{flex-direction:column; gap:0}
+  nav a{display:block; padding:.85rem 0; font-size:1rem; border-bottom:1px solid var(--line)}
+  .hero-cta .btn{flex:1 1 100%; justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<!-- ======================= HEADER ======================= -->
+<header id="header">
+  <div class="wrap">
+    <a class="brand" href="#top">Suzuki <span>GN 125</span></a>
+    <button id="menu-btn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav id="nav">
+      <ul>
+        <li><a href="#ficha">Ficha</a></li>
+        <li><a href="#fotos">Fotos</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#detalles">Detalles</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ======================= HERO (video de fondo) ======================= -->
+<section class="hero" id="top">
+  <div class="hero-bg">
+    <!-- autoplay + muted + playsinline => arranca solo también en celulares -->
+    <video id="hero-video" autoplay muted loop playsinline preload="auto"
+           poster="imagenes/portada.jpg"></video>
+  </div>
+
+  <div class="hero-inner">
+    <span class="badge" id="hero-badge">En venta</span>
+    <h1 id="hero-title">Suzuki GN 125</h1>
+    <p class="price" id="hero-price">$ —</p>
+    <p class="sub" id="hero-sub">Cargá acá una frase corta y vendedora.</p>
+
+    <div class="hero-cta">
+      <a class="btn btn-wa" id="wa-hero" href="#contacto">💬 Consultar por WhatsApp</a>
+      <a class="btn btn-ghost" href="#fotos">Ver fotos y videos</a>
+    </div>
+
+    <div class="quick" id="hero-quick"></div>
+  </div>
+
+  <button id="sound-btn" aria-label="Activar sonido del video">🔇</button>
+  <a class="scroll-hint" href="#ficha" aria-label="Bajar">⌄</a>
+</section>
+
+<!-- ======================= FICHA TÉCNICA ======================= -->
+<section id="ficha">
+  <div class="wrap reveal">
+    <h2>Ficha</h2>
+    <p class="lead">Los datos principales de la moto, de un vistazo.</p>
+    <dl class="specs" id="specs-grid"></dl>
+  </div>
+</section>
+
+<!-- ======================= FOTOS ======================= -->
+<section id="fotos">
+  <div class="wrap reveal">
+    <h2>Fotos</h2>
+    <p class="lead">Tocá cualquier foto para verla en grande.</p>
+    <div class="gallery" id="gallery"></div>
+  </div>
+</section>
+
+<!-- ======================= VIDEOS ======================= -->
+<section id="videos">
+  <div class="wrap reveal">
+    <h2>Videos</h2>
+    <p class="lead">Arranque en frío, andando y detalles.</p>
+    <div class="videos" id="videos-grid"></div>
+  </div>
+</section>
+
+<!-- ======================= DETALLES ======================= -->
+<section id="detalles">
+  <div class="wrap reveal">
+    <h2>Detalles</h2>
+    <div class="two-col">
+      <div class="panel">
+        <h3>Lo que incluye</h3>
+        <ul class="check" id="incluye-list"></ul>
+      </div>
+      <div class="panel">
+        <h3>Estado y observaciones</h3>
+        <p id="observaciones" class="lead"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= CONTACTO ======================= -->
+<section id="contacto">
+  <div class="wrap reveal">
+    <div class="contact-box">
+      <h2>Contacto</h2>
+      <p class="lead" style="margin-inline:auto" id="contacto-txt">Escribime y coordinamos para que la veas y la pruebes.</p>
+      <p>
+        <a class="btn btn-wa" id="wa-main" href="#">💬 WhatsApp</a>
+        <a class="btn btn-ghost" id="tel-main" href="#">📞 Llamar</a>
+      </p>
+      <p class="lead" style="margin-inline:auto; font-size:.85rem" id="ubicacion-txt"></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p id="footer-txt">Suzuki GN 125 · Publicación particular</p>
+  </div>
+</footer>
+
+<!-- JS externo (CDN) -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+<script>
+/* ==================================================================
+   ①  CONFIGURACIÓN  —  ES LO ÚNICO QUE NECESITÁS EDITAR
+   ==================================================================
+   Una página estática no puede "mirar" dentro de las carpetas sola,
+   así que los nombres de archivo van listados acá abajo.
+   Subí las fotos a  imagenes/  y los videos a  videos/ , y escribí
+   los nombres exactos (con mayúsculas/minúsculas y extensión).
+================================================================== */
+const CONFIG = {
+
+  /* --- Datos de la publicación --- */
+  titulo:   "Suzuki GN 125",
+  estado:   "En venta",                    // texto del cartelito naranja
+  precio:   "$ 2.100.000",                 // poné "Consultar" si preferís
+  frase:    "Modelo 2016 · 41.500 km · papeles al día · lista para transferir.",
+
+  /* --- Contacto --- */
+  whatsapp: "5492920609871",               // país + área + número, sin + ni espacios
+  telefono: "+54 9 2920 609871",
+  mensaje:  "Hola! Vi la publicación de la Suzuki GN 125 y me interesa.",
+  ubicacion:"Zona: Viedma, Río Negro · se va transferida",
+
+  /* --- Datos rápidos (chips del hero) --- */
+  chips: ["Modelo 2016", "41.500 km", "Segundo dueño", "Papeles al día"],
+
+  /* --- Ficha técnica (clave: valor) --- */
+  ficha: {
+    "Marca":        "Suzuki",
+    "Modelo":       "GN 125",
+    "Año":          "2016",
+    "Kilómetros":   "41.500 km",
+    "Cilindrada":   "124 cc",
+    "Motor":        "4T · monocilíndrico · refrigeración por aire",
+    "Transmisión":  "5 velocidades",
+    "Documentación":"Todos los papeles al día",
+    "Patente":      "Al día"
+  },
+
+  /* --- Lo que incluye --- */
+  incluye: [
+    "Dos juegos de llaves, Manual de la Suzu",
+    "Varios repuestos que tenemos guardados (filtros aceite, tablero, un asiento original, etc)",
+    "La moto cuenta con todos los accesorios originales",
+    "Baúl trasero (Givi, está en las fotos). No está colocado.",
+    "Le pusimos cubiertas sin cámara!!!"
+  ],
+
+  observaciones: "La moto está en excelentes condiciones (detalles de pintura, algún toquecito en el tanque), se la pasa andando todos los días. Compramos otra y no tenemos lugar. Como Plus: <b>cubiertas sin cámara</b>. Mediados de Septiembre hicimos cambio de Aceite y Filtro.",
+
+  /* --- VIDEO DE FONDO del hero (sin sonido) ---
+     Podés listar más de uno: usa el primero que el navegador soporte.
+     Ideal: .mp4 (H.264) horizontal, corto (10-25 s) y liviano (< 10 MB). */
+  videoFondo: [
+    { src: "videos/fondo.mp4",  type: "video/mp4" },
+    { src: "videos/fondo.webm", type: "video/webm" }
+  ],
+
+  /* --- FOTOS: nombre de archivo + descripción --- */
+  fotos: [
+    { src: "imagenes/foto-01.jpg", alt: "Lateral izquierdo" },
+    { src: "imagenes/foto-02.jpg", alt: "Vista general sobre la avenida" },
+    { src: "imagenes/foto-03.jpg", alt: "Tres cuartos frontal, lado derecho" },
+    { src: "imagenes/foto-04.jpg", alt: "Lateral derecho" },
+    { src: "imagenes/foto-05.jpg", alt: "Frente" },
+    { src: "imagenes/foto-06.jpg", alt: "Parte trasera" },
+    { src: "imagenes/foto-07.jpg", alt: "Tres cuartos trasero, lado izquierdo" },
+    { src: "imagenes/foto-08.jpg", alt: "Tres cuartos trasero, lado izquierdo (detalle)" },
+    { src: "imagenes/foto-09.jpg", alt: "Manubrio, tablero y tanque" },
+    { src: "imagenes/foto-10.jpg", alt: "Tablero y kilometraje" }
+  ],
+
+  /* --- VIDEOS de la galería (con sonido, los reproduce el visitante) --- */
+  videos: [
+    { src: "videos/lasuzu.mp4", poster: "imagenes/poster-recorrida.jpg", texto: "Recorrida completa de la moto" },
+    { src: "videos/video2.mp4", poster: "imagenes/poster-video2.jpg",   texto: "Otro ángulo, recorrida completa" }
+    // Para agregar otro video, copiá la última línea y cambiá src / poster / texto
+  ]
+};
+
+/* ==================================================================
+   ②  De acá para abajo no hace falta tocar nada
+================================================================== */
+(function(){
+  const $  = (s) => document.querySelector(s);
+  const el = (t, c) => { const n = document.createElement(t); if (c) n.className = c; return n; };
+
+  /* ---- Textos del hero ---- */
+  document.title            = CONFIG.titulo + " en venta";
+  $("#hero-title").textContent = CONFIG.titulo;
+  $("#hero-badge").textContent = CONFIG.estado;
+  $("#hero-price").textContent = CONFIG.precio;
+  $("#hero-sub").textContent   = CONFIG.frase;
+  $("#observaciones").innerHTML = CONFIG.observaciones;
+  $("#ubicacion-txt").textContent = CONFIG.ubicacion || "";
+  $("#footer-txt").textContent = CONFIG.titulo + " · Publicación particular";
+
+  CONFIG.chips.forEach(t => { const s = el("span"); s.textContent = t; $("#hero-quick").appendChild(s); });
+
+  /* ---- Links de contacto ---- */
+  const waURL = "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(CONFIG.mensaje);
+  $("#wa-main").href  = waURL;
+  $("#wa-hero").href  = waURL;
+  $("#wa-main").target = $("#wa-hero").target = "_blank";
+  $("#wa-main").rel    = $("#wa-hero").rel    = "noopener";
+  $("#tel-main").href = "tel:" + CONFIG.telefono.replace(/[^+\d]/g, "");
+
+  /* ---- Video de fondo ---- */
+  const hv = $("#hero-video");
+  CONFIG.videoFondo.forEach(v => {
+    const s = el("source"); s.src = v.src; s.type = v.type; hv.appendChild(s);
+  });
+  hv.muted = true;                         // imprescindible para que arranque solo
+  hv.load();
+  const tryPlay = () => hv.play().catch(() => {});
+  tryPlay();
+  // iOS en modo bajo consumo bloquea el autoplay: reintenta al primer toque
+  ["touchstart","click","scroll"].forEach(ev =>
+    window.addEventListener(ev, tryPlay, { once:true, passive:true }));
+  // Si el video no existe o no carga, queda el poster de fondo
+  hv.addEventListener("error", () => { hv.style.display = "none"; }, true);
+
+  /* ---- Botón de sonido del fondo ---- */
+  const sb = $("#sound-btn");
+  sb.addEventListener("click", () => {
+    hv.muted = !hv.muted;
+    sb.textContent = hv.muted ? "🔇" : "🔊";
+    sb.setAttribute("aria-label", hv.muted ? "Activar sonido del video" : "Silenciar video");
+    if (!hv.muted) hv.play().catch(() => {});
+  });
+
+  /* ---- Ficha técnica ---- */
+  const grid = $("#specs-grid");
+  Object.entries(CONFIG.ficha).forEach(([k, v]) => {
+    const d = el("div", "spec");
+    const dt = el("dt"); dt.textContent = k;
+    const dd = el("dd"); dd.textContent = v;
+    d.append(dt, dd); grid.appendChild(d);
+  });
+
+  /* ---- Lo que incluye ---- */
+  const incluyeList = $("#incluye-list");
+  CONFIG.incluye.forEach(item => {
+    const li = el("li"); li.textContent = item;
+    incluyeList.appendChild(li);
+  });
+
+  /* ---- Galería de fotos ---- */
+  const gal = $("#gallery");
+  CONFIG.fotos.forEach(f => {
+    const a = el("a");
+    a.href = f.src; a.className = "glightbox"; a.setAttribute("data-gallery", "moto");
+    a.setAttribute("data-description", f.alt || "");
+    const img = el("img");
+    img.src = f.src; img.alt = f.alt || CONFIG.titulo; img.loading = "lazy"; img.decoding = "async";
+    // Si falta el archivo, la tarjeta desaparece en lugar de mostrar un ícono roto
+    img.addEventListener("error", () => a.remove());
+    a.appendChild(img); gal.appendChild(a);
+  });
+
+  /* ---- Galería de videos ---- */
+  const vg = $("#videos-grid");
+  CONFIG.videos.forEach(v => {
+    const card = el("div", "video-card");
+    const vid  = el("video");
+    vid.src = v.src; vid.controls = true; vid.preload = "metadata"; vid.playsInline = true;
+    if (v.poster) vid.poster = v.poster;
+    vid.addEventListener("error", () => card.remove());
+    // Ajusta el marco a la proporción real del video (vertical u horizontal),
+    // en vez de forzar siempre 16:9 y recortarlo.
+    vid.addEventListener("loadedmetadata", () => {
+      if (vid.videoWidth && vid.videoHeight) {
+        vid.style.aspectRatio = vid.videoWidth + " / " + vid.videoHeight;
+      }
+    });
+    // Al reproducir uno, pausa los demás (y el de fondo no molesta)
+    vid.addEventListener("play", () => {
+      document.querySelectorAll("#videos-grid video").forEach(o => { if (o !== vid) o.pause(); });
+      if (!hv.muted) { hv.muted = true; sb.textContent = "🔇"; }
+    });
+    const p = el("p"); p.textContent = v.texto || "";
+    card.append(vid, p); vg.appendChild(card);
+  });
+
+  /* ---- Lightbox ---- */
+  if (window.GLightbox) GLightbox({ selector: ".glightbox", touchNavigation: true, loop: true });
+
+  /* ---- Header sólido al bajar ---- */
+  const header = $("#header");
+  const onScroll = () => header.classList.toggle("solid", window.scrollY > 40);
+  onScroll(); window.addEventListener("scroll", onScroll, { passive:true });
+
+  /* ---- Menú del celular ---- */
+  const nav = $("#nav"), mb = $("#menu-btn");
+  mb.addEventListener("click", () => {
+    const open = nav.classList.toggle("open");
+    mb.textContent = open ? "✕" : "☰";
+    mb.setAttribute("aria-expanded", String(open));
+  });
+  nav.addEventListener("click", e => {
+    if (e.target.tagName === "A") { nav.classList.remove("open"); mb.textContent = "☰"; }
+  });
+
+  /* ---- Aparición al hacer scroll ---- */
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
+  }, { threshold: .12 });
+  document.querySelectorAll(".reveal").forEach(n => io.observe(n));
+})();
+</script>
+</body>
+</html>
